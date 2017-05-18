@@ -7,85 +7,21 @@
 
 Before jumping into any anlysis, it's helpful to use some intuition to think about what features can be used or engineered to predict the percentage of the total fare, here is a list that I came up with:
 
-<table>
-    <tr>
-        <th>Feature Name</th>
-        <th>Type</th>
-        <th>Note</th>
-    </tr>
-    
-    <tr>
-        <td>vendor_id</td>
-        <td>categorical</td>
-        <td></td>
-    </tr>
-    
-    <tr>
-        <td>duration</td>
-        <td>numerical, continuous</td>
-        <td>dropoff time - pickup time</td>
-    </tr>
-    
-    <tr>
-        <td>pickup_hr</td>
-        <td>categorical</td>
-        <td>the hour of the day when pickup occurred. Value ranges from 0 to 23</td>
-    </tr>
-    
-    <tr>
-        <td>pickup_boro</td>
-        <td>categorical</td>
-        <td>which borough did the pickup occur. Value ranges from 1 to 5, 0 denotes none of the five areas.</td>
-    </tr>
-    
-    <tr>
-        <td>drop_boro</td>
-        <td>categorical</td>
-        <td>similar to pickup_boro</td>
-    </tr>
-    
-    <tr>
-        <td>rate_code</td>
-        <td>categorical</td>
-        <td></td>
-    </tr>
-    
-    <tr>
-        <td>trip_distance</td>
-        <td>numerical, continuous</td>
-        <td></td>
-    </tr>
-    
-    <tr>
-        <td>store_and_fwd_flag</td>
-        <td>categorical</td>
-        <td>true/false</td>
-    </tr>
-    
-    <tr>
-        <td>payment_type</td>
-        <td>categorical</td>
-        <td></td>
-    </tr>
-    
-    <tr>
-        <td>total_amount</td>
-        <td>numerical, continuous</td>
-        <td>fare_amount in the dataset represents payment calculated by distance while total_amount is the total payment incurred by a trip without tip. We will use total_amount instead of fare_amount because tip decisions are often made based upon total amount.</td>
-    </tr>
-    
-    <tr>
-        <td>passenger_count</td>
-        <td>numerical, discrete</td>
-        <td></td>
-    </tr>
-    
-    <tr>
-        <td>trip_type</td>
-        <td>categorical</td>
-        <td></td>
-    </tr>
-</table>
+| Feature Name     | Type          | Note           |
+| -------------    | ------------- | -------------  |
+| vendor_id        | categorical   |                |
+| duration         | numerical, continuous	  | dropoff time - pickup time|
+| pickup_hr | categorical | the hour of the day when pickup occurred. Value ranges from 0 to 23 |
+| pickup_boro| categorical | which borough did the pickup occur. Value ranges from 1 to 5, 0 denotes none of the five areas. |
+| drop_boro | categorical | similar to pickup_boro |
+| rate_code | categorical | |
+| trip_distance | numerical, continuous | |
+| store_and_fwd_flag | categorical | true/false |
+| payment_type | categorical | |
+| total_amount | numerical, continuous | fare_amount in the dataset represents payment calculated by distance while total_amount is the total payment incurred by a trip without tip. We will use total_amount instead of fare_amount because tip decisions are often made based upon total amount. |
+| passenger_count | numerical, discrete | |
+| trip_type | categorical | |
+
 
 ## magic shortcuts to subsections:
 
